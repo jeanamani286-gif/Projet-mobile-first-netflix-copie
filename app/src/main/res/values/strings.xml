@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StreamingApp</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_search">Recherche</string>
+    <string name="nav_favorites">Favoris</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Connexion / Inscription -->
+    <string name="login_title">S\'identifier</string>
+    <string name="login_email_hint">E-mail ou numéro de téléphone</string>
+    <string name="login_password_hint">Mot de passe</string>
+    <string name="login_button">S\'identifier</string>
+    <string name="login_forgot_password">Mot de passe oublié ?</string>
+    <string name="login_register_prompt">Nouveau sur StreamingApp ?</string>
+    <string name="login_register_now">S\'inscrire maintenant.</string>
+
+    <string name="register_title">Créer un compte</string>
+    <string name="register_name_hint">Nom d\'utilisateur</string>
+    <string name="register_email_hint">Adresse e-mail</string>
+    <string name="register_password_hint">Mot de passe</string>
+    <string name="register_confirm_password_hint">Confirmer le mot de passe</string>
+    <string name="register_button">S\'inscrire</string>
+    <string name="register_already_account">Déjà un compte ? Connexion.</string>
+
+    <string name="forgot_password_title">Réinitialiser le mot de passe</string>
+    <string name="forgot_password_desc">Saisissez votre e-mail pour recevoir les instructions de réinitialisation de votre mot de passe.</string>
+    <string name="forgot_password_button">Envoyer le lien</string>
+    <string name="forgot_password_back_to_login">Retour à la connexion</string>
+
+    <!-- Accueil -->
+    <string name="home_hero_title">Midas</string>
+    <string name="home_hero_subtitle">Film • Action • 2023</string>
+    <string name="home_play">Lecture</string>
+    <string name="home_info">Plus d\'infos</string>
+    <string name="home_trending">Tendances actuelles</string>
+    <string name="home_popular_series">Séries populaires</string>
+    <string name="home_action_movies">Films d\'action</string>
+
+    <!-- Recherche -->
+    <string name="search_hint">Rechercher un film, une série, un genre...</string>
+    <string name="search_no_results">Aucun résultat trouvé.</string>
+
+    <!-- Détails -->
+    <string name="details_play">Lecture</string>
+    <string name="details_add_favorites">Ajouter aux favoris</string>
+    <string name="details_remove_favorites">Retirer des favoris</string>
+    <string name="details_view_episodes">Voir les épisodes</string>
+    <string name="details_overview">Aperçu</string>
+
+    <!-- Épisodes -->
+    <string name="episodes_title">Épisodes</string>
+    <string name="episodes_season">Saison 1</string>
+
+    <!-- Lecture / Player -->
+    <string name="player_title">Lecture vidéo</string>
+
+    <!-- Favoris -->
+    <string name="favorites_title">Ma Liste / Favoris</string>
+    <string name="favorites_empty">Aucun favori pour le moment.</string>
+
+    <!-- Profil -->
+    <string name="profile_title">Mon Profil</string>
+    <string name="profile_username">Utilisateur</string>
+    <string name="profile_email">user@example.com</string>
+    <string name="profile_manage">Gérer mon profil</string>
+    <string name="profile_account_settings">Paramètres du compte</string>
+    <string name="profile_app_settings">Paramètres de l\'application</string>
+    <string name="profile_help">Centre d\'aide</string>
+    <string name="profile_logout">Se déconnecter</string>
+</resources>

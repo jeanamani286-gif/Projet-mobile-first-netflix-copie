@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.streamingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StreamingApp">
+
+        <!-- Login Screen (Launcher) -->
+        <activity
+            android:name="com.example.streamingapp.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Screen -->
+        <activity
+            android:name="com.example.streamingapp.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Forgot Password Screen -->
+        <activity
+            android:name="com.example.streamingapp.ForgotPasswordActivity"
+            android:exported="false" />
+
+        <!-- Home Screen -->
+        <activity
+            android:name="com.example.streamingapp.HomeActivity"
+            android:exported="false" />
+
+        <!-- Search Screen -->
+        <activity
+            android:name="com.example.streamingapp.SearchActivity"
+            android:exported="false" />
+
+        <!-- Details Screen -->
+        <activity
+            android:name="com.example.streamingapp.DetailsActivity"
+            android:exported="false" />
+
+        <!-- Episodes Screen -->
+        <activity
+            android:name="com.example.streamingapp.EpisodesActivity"
+            android:exported="false" />
+
+        <!-- Player Screen -->
+        <activity
+            android:name="com.example.streamingapp.PlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+
+        <!-- Favorites Screen -->
+        <activity
+            android:name="com.example.streamingapp.FavoritesActivity"
+            android:exported="false" />
+
+        <!-- Profile Screen -->
+        <activity
+            android:name="com.example.streamingapp.ProfileActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:id="@+id/llSearchHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_field"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_gray" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:layout_below="@id/llSearchHeader"
+        android:paddingHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tvNoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/search_no_results"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_card"
+        app:itemIconTint="@color/text_white"
+        app:itemTextColor="@color/text_white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

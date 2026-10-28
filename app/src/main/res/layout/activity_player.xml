@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <!-- Overlay header -->
+    <RelativeLayout
+        android:id="@+id/rlPlayerOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/player_title"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/btnBack"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btnPlayPause"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:background="#80000000"
+        android:contentDescription="@string/home_play"
+        android:padding="12dp"
+        android:src="@drawable/ic_pause" />
+
+</RelativeLayout>

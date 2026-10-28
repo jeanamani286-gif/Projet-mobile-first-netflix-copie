@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hero Banner -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="@color/bg_card">
+
+                <ImageView
+                    android:id="@+id/ivHeroPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/home_hero_title"
+                    android:src="@drawable/bg_card" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#B3000000"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvHeroTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_hero_title"
+                        android:textColor="@color/text_white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvHeroSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/home_hero_subtitle"
+                        android:textColor="@color/text_gray"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnHeroPlay"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_button"
+                            android:text="@string/home_play"
+                            android:textColor="@color/text_white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnHeroInfo"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="12dp"
+                            android:background="@drawable/bg_button_dark"
+                            android:text="@string/home_info"
+                            android:textColor="@color/text_white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Trending Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/home_trending"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTrending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp" />
+
+            <!-- Popular Series Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/home_popular_series"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPopularSeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp" />
+
+            <!-- Action Movies Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/home_action_movies"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvActionMovies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_card"
+        app:itemIconTint="@color/text_white"
+        app:itemTextColor="@color/text_white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
